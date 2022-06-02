@@ -38,6 +38,6 @@ app.get('/api/:rapperName', (request, response) => {
 app.get('/js/main.js', (request, response) => {
     response.sendFile(__dirname + '/js/main.js')
 })
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is running on port ${PORT}`)
 })
