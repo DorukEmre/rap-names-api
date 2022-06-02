@@ -38,9 +38,9 @@ app.get('/api/:rapperName', (request, response) => {
         response.json(rappers['dylan'])
     }
 })
-app.get('/js/main.js', (request, response) => {
-    response.sendFile(__dirname + '/js/main.js')
-})
+// app.get('/js/main.js', (request, response) => {
+//     response.sendFile(__dirname + '/js/main.js')
+// })
 app.listen(process.env.PORT || PORT, () => {
     console.log(`The server is running on port ${PORT}`)
 })
