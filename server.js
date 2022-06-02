@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const PORT = 8000 // naming convention for constants: all caps if it's a const that doesn't change
+const cors = require('cors')
+
+app.use(cors())
 
 const rappers = {
     '21 savage':{
